@@ -4,45 +4,184 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="CSS/flexboxCSS.css">
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Font fra google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+
+    <title>StudCan</title>
 </head>
 <body>
-    <main>
-        <h1>Hallo verden!!</h1>
-        <article>
-            <div class="tekst">
-                <h2>Problem</h2>
-                <p>Lorem ipsum dolor sit, 
-                    amet consectetur adipisicing elit. 
-                    Numquam atque deserunt vero nostrum alias molestias, 
-                    labore soluta corporis asperiores beatae quam earum natus 
-                    ipsa repellendus ad incidunt tenetur optio sapiente?
-                </p>
-            </div>
-            <div class="bilde">
-                <img src="BILDE/problem-bilde.jpeg" alt="Student som sliter">
-                <p class="bilde_tekst">Mangel på kjennskap</p>
-            </div>
-        </article>
+    <header class="header-container">
+        <img src="BILDE/logo.png" alt="" class="logo">
+        <input class="nav-btn" type="checkbox" id="nav-btn" />
+        <label class="nav-icon" for="nav-btn">
+            <span class="navicon"></span>
+        </label>
+        <ul class="navbar">
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#theChallange">The Challange</a></li>
+          <li><a href="#solution">Our Solution</a></li>
+          <li><a href="#footer">Contact us</a></li>
+        </ul>
+      </header>
 
-        <article>
-            <div class="tekst">
-                <h2>Løsning</h2>
-                <p>Lorem ipsum dolor sit, 
-                    amet consectetur adipisicing elit. 
-                    Numquam atque deserunt vero nostrum alias molestias, 
-                    labore soluta corporis asperiores beatae quam earum natus 
-                    ipsa repellendus ad incidunt tenetur optio sapiente?
+      <main>
+        <section id="intro">
+            <h1>StudCan</h1>
+            <article>
+                <div class="tekst">
+                    <p>
+                        <strong> Mangel på kjennskap! </strong> <br> <br>
+                        Mange studenter føler seg usikre på hva de skal gjøre når de blir ferdige med bachelor eller masterutdanning,
+                         og hvordan de kan bruke det de har lært i arbeidslivet.  
+                        <br><br>
+                        Det er et problem som har multi side effekt, 
+                        både for studentene som snart skal i arbeidslivet, samfunnet, bedrift og staten. 
+                    </p>
+                </div>
+                <div class="bilde">
+                    <img class="pic" src="BILDE/mangel på kjennskap.jpeg" alt="Student som sliter">
+                    <p class="bilde_tekst">Student streeset over å finne seg jobb</p>
+                </div>
+
+                <!--<button class="knapp">hvorfor</button>-->
+            </article>
+
+            <!-- <button class="knapp"> <a href="problem.html">Read more ></a></button> -->
+        </section>
+
+        <section id="theChallange">
+            <article>
+                <div class="tekst">
+                    
+                    <h3><strong style="margin-top: 10px; margin-bottom: 15px;"> The Challange </strong></h3> 
+                    <br> 
+                    <p>
+                    Studenter som er ferdig med utdanning har håp om å finne seg en jobb
+                    innenfor sitt linje. De fleste studentene som har klart å finne seg jobb, 
+                    har glemt mye av det de har lært på skolen,
+                    og mangler også en del kunnskap som trenges for å lykkes i arbeidet. 
+                    Det setter da stor press på studenten som må lære seg mye i opplæringsfasen, 
+                    i tillegg til at arbeidsplassen må bruk mye ressurs og tid på dette.  
+                    <br>
+                    <br>
+                    
+                    Vi har tatt inspirasjon fra FN’s bærekraftmål 4: <br> 
+                    Mål 4 omhandler ikke bare retten til skolegang, 
+                    men også at en får gode lærere og kvalitet i undervisningen 
+                    – hele veien fra barneskolen til universitetet. 
                 </p>
-            </div>
-            <div class="bilde">
-                <img src="BILDE/problem-bilde.jpeg" alt="Student som sliter">
-                <p class="bilde_tekst">NOK KUNNSKAP</p>
-            </div>
-        </article>
+                </div>
+
+                    <div class="tekst tekst2">
+                    <div class="bilde2">
+                        <img class="pic" src="BILDE/fn4.png" alt="Student som sliter">
+                        <p class="bilde_tekst">FN's 4. bærekraftmål</p>
+                    </div>
+                    <p>
+                    
+                    En del av problemet er at studenter ikke vet helt hva de
+                    kan bruke fagstoffet til. Denne bekymringen gjør at 
+                    studenter ikke aktivt deltar i alle emnene. 
+                    Derfor bør det tas i betrakting viktigheten og effekten bak dette problemet.  
+
+                    Derfor trenges det en ny løsning som kan gjøre at studenter
+                    føler seg trygge på det de gjør og lærer og måten de skal
+                    kombinere dette med virkeligheten i praksis og ta med videre 
+                    i arbeidslivet.  
+
+                    Hvordan? 
+                </p>
+                </div>
+            </article>
+        </section>
+        
+        <section id="solution">
+            <article class="article3">
+                <h3><strong style="margin-top: 10px; margin-bottom: 15px;"> The Solution </strong></h3> 
+                
+                <div class="bilde3">
+                    <img src="BILDE/løsning.png" alt="Glade studenter">
+                </div>
+                <p class="bilde_tekst">NOK KJENNSKAP OG ERFÆRING</p>
+
+                <div class="tekst3">
+                    <p>
+                    <br> 
+                    Jeg tenker at standard studieteknikk er en del av problemet, fordi det teoretiske er ofte vektlagt, med mangel på praktisk. 
+                    Derfor vil en løsning være å endre måten studiet er lagt opp på. Slik at man tilpasser studiet til å være mer relevant og praktisk enn i dag. 
+                    Praktiske prosjekt kan føre til mer deltakelse av studenter og vil dermed bringe mer forståelse av fagstoffet blant studentene. 
+
+                    <br><br> 
+
+                    Løsningen jeg har kommet fram til er å lage en nettside som kan tilby praktiserende del av fagene. Nettsiden vil være ganske 
+                    god strukturert slik at det er lett å navigere. Den skal inneholde oversikt over alle fagene i alle studiefeltene og er delt i kategorier 
+                    og sortert etter studie -> semester -> fag. Fagene skal inneholde fagstoffet og skal være spesifikt over hva som er viktig og skal 
+                    inneholde mye praktiske eksempler fra virkeligheten. Det gjør det lettere å få et innblikk på hva emnet skal brukes til og hvordan.  
+
+                    <br><br> 
+
+                    Videre skal det lages en animasjon som gjør det lettere å forstå emnet. I tilleg gi mulighet til å gjøre egne prosjekter. Prosjektene må være relatert 
+                    til studien og samtidig skal være tilnærmet det studenten kan jobbe med i arbeidslivet etter studiet. Nettsiden skal gi mulighet til at lærere får tilgang 
+                    til å oppdatere emnene og legge til nye fagstoff når det trenges, samtidig med mulighet til å få tilbakemeldinger fra studentene som tar emnet.  
+
+                    <br><br>
+
+                    Nettsiden skal være koblet til interesserte bedrifter som kan legge til artikler angående arbeidslivet der det er relevant til hver 
+                    studiet. Den kan også gi mulighet til bedrifter å legge til mulig jobber der kan studenter bli koblet til direkte til arbeidslivet. 
+                    På denne måten kan studentene kjenne på seg viktigheten av det de lærer, samtidig få svar på spørsmålet “hvorfor lærer vi dette?”  og “hvor skal vi få bruk for dette?”. 
+                </p>
+                </div>
+            </article>
+
+
     </main>
 
+    <!--FOOTER-->
+    <footer id="footer">
+        <div class="top_header">
+            <section class="footer-section">
+                <span><i class="fa fa-map-marker"></i></span>
+                <span>OsloMet, Pilestredet 35</span>
+            </section>
+            <section class="footer-section">
+                <span><i class="fa fa-phone"></i></span>
+                <span>+47 123 45 678</span>
+            </section>
+            <section class="footer-section">
+                <span><i class="fa fa-envelope"></i></span>
+                <span>info@studcan.com</span>
+            </section>
+        </div>
+        
+        <span class="border-shape"></span>
 
+        <div class="bottom_content">
+            <section class="footer-section">
+                <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.telegram.com"><i class="fa fa-telegram"></i></a>
+            </section>
+
+            <section class="footer-section">
+                <a href="#intro">Home</a>
+                <a href="#theChallange">The Challange</a>
+                <a href="#solution">Solution</a>
+                <a href="#footer">Contact</a>
+            </section>
+        </div>
+
+        <div class="copyright">
+        Copyright © 2021 StudCan - All rights reserved 
+        </div>
+    </footer>
+    
 </body>
 </html>

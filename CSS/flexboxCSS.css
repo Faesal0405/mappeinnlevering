@@ -1,7 +1,13 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+
 body {
     margin: 0;
-    font-family: Helvetica, sans-serif;
+    /*font-family: Helvetica, sans-serif;*/
     background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif; 
 }
 
 a {
@@ -14,8 +20,8 @@ a {
     top: 0px;
     background-color: #fff;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    position: fixed;
     width: 100%;
+    position: absolute;
     z-index: 3;
   }
   
@@ -42,7 +48,7 @@ a {
   .header-container .logo {
       display: block;
       float: left;
-      width: 90px;
+      width: 110px;
       font-size: 2em;
       padding: 1px 20px;
   }
@@ -70,7 +76,7 @@ a {
     display: block;
     height: 2px;
     position: relative;
-    transition: background .2s ease-out;
+    transition: .2s ease-out;
     width: 18px;
   }
   
@@ -122,7 +128,7 @@ a {
   
   /* Responsive nav bar */
   
-  @media (min-width: 768px) {
+  @media (min-width: 750px) {
     .header-container li {
       float: left;
     }
@@ -141,9 +147,32 @@ a {
 
   /************* Home Page ************/
 
+  section > .knapp{
+    background-color: white;
+    border-radius: 10px;
+    border: black 1px solid;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+
+  section > .knapp > a{
+    text-decoration: none;
+  }
+
+  .knapp:hover{
+    background-color: burlywood;
+    color: white;
+    border: solid 1px #f4f4f4;
+  }
+
+
 main {
     margin-top: 100px;
-    width: 100%;
 }
 
 section {
@@ -153,47 +182,27 @@ section {
 
 section > h1{
     font-size: 50px;
-    font-family: Copperplate, Papyrus, fantasy;
+   /* font-family: Copperplate, Papyrus, fantasy;*/
 }
 
 section > article{
     margin-top: 50px ;
 }
 
+
 h1, h2, p{
     padding: 0 8% 0 8%;
-    text-align: center;
 }
 
 h2 {
   padding-top: 20px;
-  text-decoration: underline;
 }
 
 article {
   background-color: burlywood;
   width: 100%;
+  padding: 10px; 
 }
-
-article > .bilde{
-left: 0;
-    width: 100%;
-    height: auto;
-    position: relative;  /*plasserer alt som er inn i diven, relativ til diven */
-    display: inline-block;
-    overflow: hidden; /*fjrerner det som kommer utenfor diven */
-    margin: 0;
-    margin-top: 20px;
-    /*background-color: tomato;*/
-  }
-
-  article > .bilde > p{
-    text-align: center;
-  }
-
-  .pic {
-      padding: 20px 20px;
-  }
 
   .tekst {
       padding-top: 10px;
@@ -202,59 +211,52 @@ left: 0;
 
   p {
     font-size: large;
+    line-height: 25px;
   }
-  
-  article > .bilde > img {
-    display: block;
-    height: auto;
-    width: 100%;
-  }
+
   article > .bilde > .bilde_tekst{
       font-size: medium;
-      margin: 0;
-      padding: 5px;
+      
   }
 
   tr > td {
     font-size: medium;
-    
   }
 
-  @media all and (max-width: 800px) {
-    .navigation {
-      justify-content: space-around;
-    }
-    img{
-        display: none;
-    }
+  .bilde3 {
+    display: flex;
+    justify-content: flex-start;
+    width: 150px;
   }
+
   
   @media all and (max-width: 600px) {
-    .navigation {
-      flex-flow: column wrap;
-      padding: 0;
-    }
-    .navigation a { 
-      text-align: center; 
-      padding: 10px;
-      border-top: 1px solid rgba(255, 255, 255,0.3); 
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-    }
-    .navigation li:last-of-type a {
-      border-bottom: none;
-    }
-
     article > .bilde > img {
-        width: 80%;
-        /*bilde skal bli plassert i midten*/
-        margin: 0 auto;
+        width: 90%;
+      
       }
-  
+
       article {
           width: 90%;
           margin: 0px auto;
       }
 
+      .pic {
+        padding: 0 20px;
+        width: 150px;
+      }
+
+      .bilde3 > img{
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+  
+      }
+  
+      .bilde3{
+        margin-top:20px ;
+        width: 100%;
+      }
   }
 
   /* responsive */
@@ -269,6 +271,23 @@ left: 0;
         width: 90%;
         margin: 0px auto;
     }
+
+    .pic {
+      padding: 0 20px;
+      width: 150px;
+    }
+
+    .bilde3 > img{
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+
+    }
+
+    .bilde3{
+      margin-top:20px ;
+      width: 100%;
+    }
   }
 
   @media(min-width: 750px)  {
@@ -277,16 +296,58 @@ left: 0;
         margin: 0px auto;
     }
 
-    article > .bilde {
-        left: 0;
-        width: 1500px;
-        margin: 0;
-        margin-top: 20px;
+    article > .tekst{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    #solution article h3{
+      margin: 0px auto;
+    }
+
+    .article3 {
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-between;
     }
 
 
+    article > .bilde {  
+        margin-top: 20px;
+    }
+
+    article > .bilde > img {  
+      width: 300px;
+    }
+
+    article > .bilde2 > img { 
+      width: 150px;
+    }
+
+    strong{
+        font-size: x-large;
+    }
     .pic {
-    padding: 20px 20px;
+         padding: 0 20px;
+         width: 150px;
+    }
+
+    .bilde3 > img{
+      width: 70%;
+      height: auto;
+      margin: 0 auto;
+
+    }
+
+    .bilde3{
+      margin-top:20px ;
+      width: 100%;
+    }
+
+    .tekst2 {
+      padding: 20px;
     }
       
   }
@@ -321,7 +382,7 @@ left: 0;
     }
     
     .top_header .fa{
-        color: burlywood;
+        color: black;
         font-size:35px;
     }
     
@@ -358,9 +419,9 @@ left: 0;
     
     .copyright{
         padding: 0.8em 0;
-        background-color: black;
+        background-color: burlywood;
         text-align: center;
-        color:rgba(255,255,255,0.7);
+        color: black;
         font-size: 12px;
     }
     
