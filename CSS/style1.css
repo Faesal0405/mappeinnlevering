@@ -1,0 +1,75 @@
+body{ 
+    width: 100%;
+    margin: 0;
+}
+
+main{
+    width: 100%;
+    margin: 0 auto;  /* midstiller */
+   /* background-color: ; */
+}
+
+main > h1{
+    font-size: 50px;
+    justify-content: center;  /* midstiller */
+    text-decoration: underline;
+}
+
+main > article{
+    margin-top: 10px ;
+  /*  background-color: powderblue;*/
+}
+
+h1, h2, p{
+    padding: 0 5% 0 5%;
+    text-align: center;
+}
+
+article > .bilde{
+    left: 0;
+    width: 100%;
+    height: auto;
+    position: relative;  /*plasserer alt som er inn i diven, relativ til diven */
+    display: inline-block;
+    overflow: hidden; /*fjrerner det som kommer utenfor diven */
+    margin: 0;
+    /*background-color: tomato;*/
+  }
+
+
+  article > .bilde > p{
+    text-align: center;
+  }
+
+  p{
+    font-size: large;
+  }
+  
+  article > .bilde > img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+  article > .bilde > .bilde_tekst{
+      font-size: medium;
+      margin: 0;
+      padding: 5px;
+  }
+
+  tr > td {
+    font-size: medium;
+    
+  }
+
+  /* responsive */
+  @media(min-width: 500px) {
+    article > .bilde > img {
+      width: 80%;
+      /*bilde skal bli plassert i midten*/
+      margin: 0 auto;
+    }
+  }
+
+  @media(min-width: 900px)  {
+   
+  }
